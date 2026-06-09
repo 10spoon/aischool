@@ -135,15 +135,15 @@ button:disabled {
   margin: 0 auto;
   padding: 72px 36px 36px;
   display: grid;
-  grid-template-columns: minmax(320px, 0.76fr) minmax(420px, 1.24fr);
+  grid-template-columns: minmax(420px, 0.72fr) minmax(0, 1.28fr);
   align-items: center;
   gap: 32px;
   overflow: hidden;
 }
 
 .hero-copy {
+  width: min(100%, 520px);
   max-width: 520px;
-  margin-left: max(0px, calc((100vw - var(--max)) / 2));
 }
 
 .eyebrow {
@@ -161,6 +161,9 @@ button:disabled {
   font-weight: 800;
   line-height: 1.02;
   letter-spacing: 0;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  text-wrap: balance;
 }
 
 .hero h1 {
@@ -174,6 +177,7 @@ button:disabled {
   color: var(--muted);
   font-size: 22px;
   line-height: 1.38;
+  word-break: keep-all;
 }
 
 .hero-actions,
@@ -488,13 +492,13 @@ button:disabled {
   margin: 0 auto;
   padding: 72px 36px 44px;
   display: grid;
-  grid-template-columns: minmax(320px, 0.9fr) minmax(420px, 1.1fr);
+  grid-template-columns: minmax(420px, 0.86fr) minmax(0, 1.14fr);
   align-items: center;
   gap: 40px;
 }
 
 .detail-copy {
-  margin-left: max(0px, calc((100vw - var(--max)) / 2));
+  width: min(100%, 620px);
 }
 
 .detail-hero h1 {
