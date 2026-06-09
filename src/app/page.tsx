@@ -7,9 +7,9 @@ import { courses } from "@/lib/courses";
 export default function HomePage() {
   const featured = courses.filter((course) => ["Popular", "Build", "RAG"].includes(course.badge));
   const paths = [
-    { icon: Sparkles, title: "기초부터", text: "AI 개념과 프롬프트 감각을 짧은 레슨으로 다집니다." },
-    { icon: WandSparkles, title: "업무에 바로", text: "문서, 리서치, 자동화 흐름을 실제 작업 방식에 맞춥니다." },
-    { icon: MonitorPlay, title: "제품처럼", text: "챗봇, 지식 검색, AI 앱 설계를 완성도 있게 경험합니다." }
+    { icon: Sparkles, title: "기초부터", text: "AI가 뭔지, 프롬프트는 어떻게 쓰는지 짧은 강의로 차근차근 익힙니다." },
+    { icon: WandSparkles, title: "업무에 바로", text: "매일 하는 업무에 AI를 끼워 넣어 실제로 어떻게 쓸 수 있는지 해봅니다." },
+    { icon: MonitorPlay, title: "제품처럼", text: "챗봇이나 검색 봇을 직접 만들면서 AI 제품 설계를 경험합니다." }
   ];
 
   return (
